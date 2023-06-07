@@ -5,7 +5,7 @@
     "scope": "/",
     "start_url": "/",
     "name": "Prime Flix",
-    "short_name": "PF",
+    "short_name": "PrimeFlx",
     "description": "A movie app.",
     "icons": [
         {
