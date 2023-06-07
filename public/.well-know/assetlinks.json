@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "app.vercel.primeflix_nextjs_tailwind.twa",
+                     "sha256_cert_fingerprints": ["39:06:60:79:D2:D0:36:9B:CC:7F:E3:23:7A:5A:6A:DC:0A:32:43:CC:93:EA:90:2E:2C:3B:5C:39:93:15:7E:53"] }
+      }
+]
