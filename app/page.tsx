@@ -22,6 +22,23 @@ export default async function Home() {
   const topRatedMovies = await getMovies("top_rated");
   const upcomingMovies = await getMovies("upcoming");
 
+  const registerServiceWorker = () => {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then((registration) => {
+            console.log('Service Worker registrado com sucesso:', registration);
+          })
+          .catch((error) => {
+            console.log('Falha ao registrar o Service Worker:', error);
+          });
+      });
+    }
+  };
+
+  registerServiceWorker()
+
   return (
     <main className="mt-5 flex flex-col">
       <div className="w-[1300px] max-w-full px-4 mx-auto">
